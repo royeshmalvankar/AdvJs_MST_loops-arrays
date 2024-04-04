@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let names = ["Nrupul", "Prateek", "Aman", "Albert", "Yogesh"]
+    let ages = [32, 30, 26, 28, 44]
+
+    let data=[]
+
+        for(i=0;i<names.length;i++){
+            obj = {
+                name:names[i],
+                age:ages[i]
+            }
+            data.push(obj)
+        }
+    let ageft = data.filter((obj)=>{
+        if(obj.age>30){
+            return obj["name"]
+
+        }
+    })
+    bag=""
+    for(i=0;i<ageft.length;i++){
+        bag+=ageft[i]["name"]+" "
+    }
+    console.log(bag)
+ 
+
+</script>
+</html>
